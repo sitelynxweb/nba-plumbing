@@ -161,8 +161,10 @@ header{
   font-family:"Oswald",sans-serif;font-style:italic;font-weight:700;
   text-transform:uppercase;letter-spacing:.02em;
   font-size:clamp(1.1rem,3vw,1.45rem);color:var(--pu2);
-  
+  cursor:pointer;transition:transform .15s,color .15s;text-decoration:none;
 }
+.svc-item:hover{transform:translateX(7px);color:var(--go2)}
+.svc-item:hover .svc-diamond{background:var(--pu)}
 
 .svc-diamond{
   width:24px;height:24px;flex:none;
@@ -233,8 +235,9 @@ header{
   font-size:.78rem;font-weight:700;color:var(--pu2);
   background:rgba(85,37,131,.08);padding:.46rem .95rem;
   clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);
-  
+  cursor:pointer;transition:background .15s,color .15s;text-decoration:none;display:inline-block;
 }
+.chip:hover{background:var(--go);color:var(--ink)}
 
 /* gold accent card right side */
 .contact-card{
@@ -367,14 +370,14 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--pu);outline-offset:2p
       <p>From the ground up to the finishing fixtures — big jobs or small, we play to finish.</p>
     </div>
     <ul class="svc-grid reveal" style="list-style:none">
-      <li class="svc-item"><span class="svc-diamond"></span>New Construction</li>
-      <li class="svc-item"><span class="svc-diamond"></span>Remodels</li>
-      <li class="svc-item"><span class="svc-diamond"></span>Fixture Replacement</li>
-      <li class="svc-item"><span class="svc-diamond"></span>Tankless Heaters</li>
-      <li class="svc-item"><span class="svc-diamond"></span>Water Heaters</li>
-      <li class="svc-item"><span class="svc-diamond"></span>Drain Cleaning</li>
-      <li class="svc-item"><span class="svc-diamond"></span>Repipe</li>
-      <li class="svc-item"><span class="svc-diamond"></span>Gas Line</li>
+      <a class="svc-item" href="#contact"><span class="svc-diamond"></span>New Construction</a>
+      <a class="svc-item" href="#contact"><span class="svc-diamond"></span>Remodels</a>
+      <a class="svc-item" href="#contact"><span class="svc-diamond"></span>Fixture Replacement</a>
+      <a class="svc-item" href="#contact"><span class="svc-diamond"></span>Tankless Heaters</a>
+      <a class="svc-item" href="#contact"><span class="svc-diamond"></span>Water Heaters</a>
+      <a class="svc-item" href="#contact"><span class="svc-diamond"></span>Drain Cleaning</a>
+      <a class="svc-item" href="#contact"><span class="svc-diamond"></span>Repipe</a>
+      <a class="svc-item" href="#contact"><span class="svc-diamond"></span>Gas Line</a>
     </ul>
   </div>
 </section>
@@ -435,15 +438,15 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--pu);outline-offset:2p
       <p class="hrs"><b>Hours</b><br/>Mon – Sat: 7am – 7pm &nbsp;·&nbsp; Emergency service available</p>
       <p class="area-lbl">Serving the South Bay</p>
       <div class="chips">
-        <span class="chip">Redondo Beach</span>
-        <span class="chip">Torrance</span>
-        <span class="chip">Manhattan Beach</span>
-        <span class="chip">Hermosa Beach</span>
-        <span class="chip">El Segundo</span>
-        <span class="chip">Palos Verdes</span>
-        <span class="chip">San Pedro</span>
-        <span class="chip">Gardena</span>
-        <span class="chip">Lawndale</span>
+        <a class="chip" href="https://www.google.com/maps/search/Redondo+Beach+CA" target="_blank" rel="noopener">Redondo Beach</a>
+        <a class="chip" href="https://www.google.com/maps/search/Torrance+CA" target="_blank" rel="noopener">Torrance</a>
+        <a class="chip" href="https://www.google.com/maps/search/Manhattan+Beach+CA" target="_blank" rel="noopener">Manhattan Beach</a>
+        <a class="chip" href="https://www.google.com/maps/search/Hermosa+Beach+CA" target="_blank" rel="noopener">Hermosa Beach</a>
+        <a class="chip" href="https://www.google.com/maps/search/El+Segundo+CA" target="_blank" rel="noopener">El Segundo</a>
+        <a class="chip" href="https://www.google.com/maps/search/Palos+Verdes+CA" target="_blank" rel="noopener">Palos Verdes</a>
+        <a class="chip" href="https://www.google.com/maps/search/San+Pedro+CA" target="_blank" rel="noopener">San Pedro</a>
+        <a class="chip" href="https://www.google.com/maps/search/Gardena+CA" target="_blank" rel="noopener">Gardena</a>
+        <a class="chip" href="https://www.google.com/maps/search/Lawndale+CA" target="_blank" rel="noopener">Lawndale</a>
       </div>
     </div>
     <div class="reveal">
